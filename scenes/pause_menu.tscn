@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://csomhvv2sybbo"]
+[gd_scene load_steps=9 format=3 uid="uid://csomhvv2sybbo"]
 
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_4cvmp"]
 [ext_resource type="Shader" path="res://scenes/pause_menu.gdshader" id="1_82v66"]
 [ext_resource type="FontFile" uid="uid://cqw4qvia5v0cv" path="res://assets/ProggyCleanCENerdFontMono-Regular.ttf" id="1_wpv3b"]
+[ext_resource type="Script" path="res://scripts/button.gd" id="4_8gn8b"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yv2ql"]
 shader = ExtResource("1_82v66")
@@ -176,6 +177,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("1_wpv3b")
 theme_override_font_sizes/font_size = 70
 text = "Resume"
+script = ExtResource("4_8gn8b")
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 texture_filter = 1

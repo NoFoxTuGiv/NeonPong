@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsvvtn017di5j"]
+[gd_scene load_steps=7 format=3 uid="uid://dsvvtn017di5j"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_fy1vh"]
 [ext_resource type="FontFile" uid="uid://cqw4qvia5v0cv" path="res://assets/ProggyCleanCENerdFontMono-Regular.ttf" id="2_k8uc6"]
 [ext_resource type="Texture2D" uid="uid://b8icch55rge11" path="res://assets/title.png" id="3_nwaj2"]
 [ext_resource type="Script" path="res://scripts/title.gd" id="4_g7016"]
+[ext_resource type="Script" path="res://scripts/button.gd" id="5_1csft"]
 
 [sub_resource type="Environment" id="Environment_vw350"]
 background_mode = 3
@@ -67,6 +68,7 @@ theme_override_fonts/font = ExtResource("2_k8uc6")
 theme_override_font_sizes/font_size = 70
 text = "Start Game"
 alignment = 0
+script = ExtResource("5_1csft")
 
 [node name="ExitButton" type="Button" parent="MarginContainer/VBoxContainer"]
 z_index = 5

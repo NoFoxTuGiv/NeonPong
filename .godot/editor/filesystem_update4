@@ -9,3 +9,4 @@ res://pause_menu.tscn
 res://scenes/pause_menu.tscn
 res://scenes/pause_menu.gdshader
 res://scripts/pause_menu.gd
+res://scripts/button.gd
