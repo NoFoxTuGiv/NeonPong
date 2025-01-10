@@ -29,13 +29,13 @@ script = ExtResource("1_xvswi")
 
 [node name="Background" type="TextureRect" parent="."]
 modulate = Color(0, 0, 0, 1)
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 1280.0
+offset_bottom = 720.0
 texture = SubResource("CurveXYZTexture_d1nv5")
 metadata/_edit_use_anchors_ = true
 
 [node name="Viewport" type="Camera2D" parent="."]
-position = Vector2(576, 324)
+position = Vector2(640, 360)
 
 [node name="Labels" type="Node" parent="Viewport"]
 
@@ -54,10 +54,10 @@ script = ExtResource("1_sf3xt")
 [node name="AIScore" type="Label" parent="Viewport/Labels"]
 modulate = Color(1.5, 1.5, 1.5, 1)
 texture_filter = 1
-offset_left = 1048.0
+offset_left = 1176.0
 offset_top = 64.0
-offset_right = 1088.0
-offset_bottom = 87.0
+offset_right = 1216.0
+offset_bottom = 122.0
 theme_override_fonts/font = ExtResource("1_sl7xj")
 theme_override_font_sizes/font_size = 70
 text = "0"
@@ -68,7 +68,7 @@ script = ExtResource("2_b03lu")
 
 [node name="TopWall" type="StaticBody2D" parent="Walls"]
 unique_name_in_owner = true
-position = Vector2(576, 0)
+position = Vector2(640, 0)
 rotation = 3.14159
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/TopWall"]
@@ -76,7 +76,7 @@ shape = SubResource("WorldBoundaryShape2D_4o7ns")
 
 [node name="BottomWall" type="StaticBody2D" parent="Walls"]
 unique_name_in_owner = true
-position = Vector2(576, 648)
+position = Vector2(640, 720)
 rotation = 6.28318
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/BottomWall"]
@@ -84,7 +84,7 @@ shape = SubResource("WorldBoundaryShape2D_4o7ns")
 
 [node name="PlayerWall" type="StaticBody2D" parent="Walls"]
 unique_name_in_owner = true
-position = Vector2(0, 320)
+position = Vector2(0, 360)
 rotation = 7.85397
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/PlayerWall"]
@@ -92,7 +92,7 @@ shape = SubResource("WorldBoundaryShape2D_4o7ns")
 
 [node name="AIWall" type="StaticBody2D" parent="Walls"]
 unique_name_in_owner = true
-position = Vector2(1152, 320)
+position = Vector2(1280, 360)
 rotation = -1.57079
 physics_material_override = SubResource("PhysicsMaterial_5hbi6")
 
@@ -101,16 +101,16 @@ shape = SubResource("WorldBoundaryShape2D_4o7ns")
 
 [node name="PlayerPaddle" parent="." instance=ExtResource("1_32n1w")]
 unique_name_in_owner = true
-position = Vector2(64, 324)
+position = Vector2(64, 360)
 speed = 450
 
 [node name="AIPaddle" parent="." instance=ExtResource("2_yl5qq")]
 unique_name_in_owner = true
-position = Vector2(1088, 324)
+position = Vector2(1216, 360)
 rotation = -0.0141832
 
 [node name="Ball" parent="." instance=ExtResource("3_ixtvn")]
-position = Vector2(576, 324)
+position = Vector2(640, 360)
 
 [node name="GlowEffect" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5a2rg")
