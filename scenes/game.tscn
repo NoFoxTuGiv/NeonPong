@@ -1,0 +1,115 @@
+[gd_scene load_steps=12 format=3 uid="uid://c27w7ccbvqi0m"]
+
+[ext_resource type="PackedScene" uid="uid://bdkwfn20vjioh" path="res://scenes/player_paddle.tscn" id="1_32n1w"]
+[ext_resource type="Script" path="res://scripts/player_score.gd" id="1_sf3xt"]
+[ext_resource type="FontFile" uid="uid://cqw4qvia5v0cv" path="res://assets/ProggyCleanCENerdFontMono-Regular.ttf" id="1_sl7xj"]
+[ext_resource type="Script" path="res://scripts/global.gd" id="1_xvswi"]
+[ext_resource type="Script" path="res://scripts/ai_score.gd" id="2_b03lu"]
+[ext_resource type="PackedScene" uid="uid://cjas7icmhxdpc" path="res://scenes/ai_paddle.tscn" id="2_yl5qq"]
+[ext_resource type="PackedScene" uid="uid://cq75dob2phnfh" path="res://scenes/ball.tscn" id="3_ixtvn"]
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_d1nv5"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4o7ns"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5hbi6"]
+bounce = 1.0
+
+[sub_resource type="Environment" id="Environment_5a2rg"]
+background_mode = 3
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 4.0
+glow_strength = 1.4
+glow_blend_mode = 0
+
+[node name="Game" type="Node"]
+script = ExtResource("1_xvswi")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = SubResource("CurveXYZTexture_d1nv5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Viewport" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Labels" type="Node" parent="Viewport"]
+
+[node name="PlayerScore" type="Label" parent="Viewport/Labels"]
+modulate = Color(1.2, 1.2, 1.2, 1)
+texture_filter = 1
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 104.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("1_sl7xj")
+theme_override_font_sizes/font_size = 70
+text = "0"
+script = ExtResource("1_sf3xt")
+
+[node name="AIScore" type="Label" parent="Viewport/Labels"]
+modulate = Color(1.5, 1.5, 1.5, 1)
+texture_filter = 1
+offset_left = 1048.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("1_sl7xj")
+theme_override_font_sizes/font_size = 70
+text = "0"
+horizontal_alignment = 2
+script = ExtResource("2_b03lu")
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="TopWall" type="StaticBody2D" parent="Walls"]
+unique_name_in_owner = true
+position = Vector2(576, 0)
+rotation = 3.14159
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/TopWall"]
+shape = SubResource("WorldBoundaryShape2D_4o7ns")
+
+[node name="BottomWall" type="StaticBody2D" parent="Walls"]
+unique_name_in_owner = true
+position = Vector2(576, 648)
+rotation = 6.28318
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/BottomWall"]
+shape = SubResource("WorldBoundaryShape2D_4o7ns")
+
+[node name="PlayerWall" type="StaticBody2D" parent="Walls"]
+unique_name_in_owner = true
+position = Vector2(0, 320)
+rotation = 7.85397
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/PlayerWall"]
+shape = SubResource("WorldBoundaryShape2D_4o7ns")
+
+[node name="AIWall" type="StaticBody2D" parent="Walls"]
+unique_name_in_owner = true
+position = Vector2(1152, 320)
+rotation = -1.57079
+physics_material_override = SubResource("PhysicsMaterial_5hbi6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/AIWall"]
+shape = SubResource("WorldBoundaryShape2D_4o7ns")
+
+[node name="PlayerPaddle" parent="." instance=ExtResource("1_32n1w")]
+unique_name_in_owner = true
+position = Vector2(64, 324)
+speed = 450
+
+[node name="AIPaddle" parent="." instance=ExtResource("2_yl5qq")]
+unique_name_in_owner = true
+position = Vector2(1088, 324)
+rotation = -0.0141832
+
+[node name="Ball" parent="." instance=ExtResource("3_ixtvn")]
+position = Vector2(576, 324)
+
+[node name="GlowEffect" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5a2rg")

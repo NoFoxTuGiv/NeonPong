@@ -1,0 +1,7 @@
+res://main.tscn
+res://main_menu.tscn
+res://game.tscn
+res://scenes/main_menu.tscn
+res://scripts/main_menu.gd
+res://scenes/game.tscn
+res://scripts/ball.gd
