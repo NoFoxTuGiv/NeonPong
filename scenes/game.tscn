@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c27w7ccbvqi0m"]
+[gd_scene load_steps=13 format=3 uid="uid://c27w7ccbvqi0m"]
 
 [ext_resource type="PackedScene" uid="uid://bdkwfn20vjioh" path="res://scenes/player_paddle.tscn" id="1_32n1w"]
 [ext_resource type="Script" path="res://scripts/player_score.gd" id="1_sf3xt"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://scripts/ai_score.gd" id="2_b03lu"]
 [ext_resource type="PackedScene" uid="uid://cjas7icmhxdpc" path="res://scenes/ai_paddle.tscn" id="2_yl5qq"]
 [ext_resource type="PackedScene" uid="uid://cq75dob2phnfh" path="res://scenes/ball.tscn" id="3_ixtvn"]
+[ext_resource type="PackedScene" uid="uid://csomhvv2sybbo" path="res://scenes/pause_menu.tscn" id="8_h4qgq"]
 
 [sub_resource type="CurveXYZTexture" id="CurveXYZTexture_d1nv5"]
 
@@ -113,3 +114,9 @@ position = Vector2(576, 324)
 
 [node name="GlowEffect" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5a2rg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("8_h4qgq")]
+unique_name_in_owner = true
+process_mode = 3
