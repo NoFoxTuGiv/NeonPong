@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b8icch55rge11" path="res://assets/title.png" id="3_nwaj2"]
 [ext_resource type="Script" path="res://scripts/title.gd" id="4_g7016"]
 [ext_resource type="Script" path="res://scripts/button.gd" id="5_1csft"]
-[ext_resource type="AudioStream" uid="uid://d0tsocig5qk1f" path="res://assets/prism.mp3" id="6_5cu8s"]
+[ext_resource type="AudioStream" uid="uid://biaj6ijy55a5w" path="res://assets/prism.mp3" id="6_5cu8s"]
 
 [sub_resource type="Environment" id="Environment_vw350"]
 background_mode = 3

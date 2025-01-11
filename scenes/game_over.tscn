@@ -1,31 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://b402ybrgg3kq5"]
 
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_7tigd"]
 [ext_resource type="FontFile" uid="uid://cqw4qvia5v0cv" path="res://assets/ProggyCleanCENerdFontMono-Regular.ttf" id="2_51vas"]
 [ext_resource type="Script" path="res://scripts/button.gd" id="4_yoo7t"]
-
-[sub_resource type="GDScript" id="GDScript_xfin8"]
-script/source = "extends Control
-
-func testScore():
-	if Global.aiScore == Global.maxScore or Global.playerScore == Global.maxScore:
-		game_over()
-
-func _on_goquit_pressed() -> void:
-	get_tree().quit()
-
-func _on_play_again_pressed() -> void:
-	Global.aiScore = 0
-	Global.playerScore = 0
-	visible = false
-	get_tree().paused = false
-
-func game_over():
-	visible = true
-	get_tree().paused = true
-
-func _process(_delta: float) -> void:
-	testScore()
-"
 
 [node name="GameOver" type="Control"]
 visible = false
@@ -35,7 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_xfin8")
+script = ExtResource("1_7tigd")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 process_mode = 3

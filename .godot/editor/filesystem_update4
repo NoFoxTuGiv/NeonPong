@@ -1,13 +1,2 @@
-res://scenes/game.tscn
 res://scripts/global.gd
 res://resources/pause_menu.gdshader
-res://scripts/game_over.gd
-res://scenes/main_menu.tscn
-res://scenes/pause_menu.tscn
-res://scenes/game_over.tscn
-res://scripts/pause_menu.gd
-res://scripts/button.gd
-res://resources/pause_menu.tres
-res://README.md
-res://scenes/ball.tscn
-res://scripts/ball.gd
