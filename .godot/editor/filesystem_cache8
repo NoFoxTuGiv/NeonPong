@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736563084
-export_presets.cfg::TextFile::-1::1736562959::0::1::::<><>::
+::res://::1736563976
+export_presets.cfg::TextFile::-1::1736563311::0::1::::<><>::
 icon.svg::CompressedTexture2D::4918361854577418204::1736544525::1736544556::1::::<><>::
 README.md::TextFile::-1::1736560512::0::1::::<><>::
 ::res://assets/::1736562386
@@ -15,9 +15,9 @@ screen.png::CompressedTexture2D::1784451753605530738::1736544682::1736551868::1:
 sprites.png::CompressedTexture2D::3616192131827718749::1736544525::1736544556::1::::<><>::
 stellar-escape-prigida-main-version-25318-03-02.mp3::AudioStreamMP3::9021471062241460952::1736560339::1736560498::1::::<><>::
 title.png::CompressedTexture2D::4719292966747595934::1736545608::1736546207::1::::<><>::
-::res://resources/::1736562977
+::res://resources/::1736563327
 blur.res::Animation::7856430717240024510::1736555331::0::1::::<><>::
-pause_menu.gdshader::Shader::-1::1736562977::0::1::::<><>::
+pause_menu.gdshader::Shader::-1::1736563327::0::1::::<><>::
 pause_menu.tres::ShaderMaterial::3143425247183906046::1736558383::0::1::::<><>::res://resources/pause_menu.gdshader
 ::res://scenes/::1736562621
 ai_paddle.tscn::PackedScene::5405691435235143988::1736544525::0::1::::<><>::res://scripts/ai_paddle.gd<>uid://brryfkor453th::::res://assets/sprites.png
@@ -27,13 +27,13 @@ game_over.tscn::PackedScene::4475188889972715046::1736562621::0::1::::<><>::res:
 main_menu.tscn::PackedScene::8467322878979304381::1736562540::0::1::::<><>::res://scripts/main_menu.gd<>uid://cqw4qvia5v0cv::::res://assets/ProggyCleanCENerdFontMono-Regular.ttf<>uid://b8icch55rge11::::res://assets/title.png<>res://scripts/title.gd<>res://scripts/button.gd<>uid://biaj6ijy55a5w::::res://assets/prism.mp3
 pause_menu.tscn::PackedScene::6065884082581154484::1736562540::0::1::::<><>::res://scripts/pause_menu.gd<>uid://cqw4qvia5v0cv::::res://assets/ProggyCleanCENerdFontMono-Regular.ttf<>res://scripts/button.gd<>uid://dj6yjbt1lj0gw::::res://resources/blur.res
 player_paddle.tscn::PackedScene::2618976420635765883::1736544525::0::1::::<><>::res://scripts/player_paddle.gd<>uid://brryfkor453th::::res://assets/sprites.png
-::res://scripts/::1736562621
+::res://scripts/::1736563327
 ai_paddle.gd::GDScript::-1::1736544525::0::1::::<>Node2D<>::
 ai_score.gd::GDScript::-1::1736544525::0::1::::<>Label<>::
 ball.gd::GDScript::-1::1736560792::0::1::::<>CharacterBody2D<>::
 button.gd::GDScript::-1::1736558003::0::1::::<>Button<>::
 game_over.gd::GDScript::-1::1736562537::0::1::::<>Control<>::
-global.gd::GDScript::-1::1736562621::0::1::::<>Node<>::
+global.gd::GDScript::-1::1736563327::0::1::::<>Node<>::
 main_menu.gd::GDScript::-1::1736544525::0::1::::<>Control<>::
 pause_menu.gd::GDScript::-1::1736561611::0::1::::<>Control<>::
 player_paddle.gd::GDScript::-1::1736544525::0::1::::<>Node2D<>::
