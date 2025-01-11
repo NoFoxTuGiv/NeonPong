@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnwibe03dxjmw"
-path="res://.godot/imported/altcover.png-8b0da7f4b71849227ed3f9bc161bb3c4.ctex"
+uid="uid://d2scr83lhvf8w"
+path="res://.godot/imported/altcover.png-bbb69fab27d03babc420b83ececdac89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://altcover.png"
-dest_files=["res://.godot/imported/altcover.png-8b0da7f4b71849227ed3f9bc161bb3c4.ctex"]
+source_file="res://assets/altcover.png"
+dest_files=["res://.godot/imported/altcover.png-bbb69fab27d03babc420b83ececdac89.ctex"]
 
 [params]
 

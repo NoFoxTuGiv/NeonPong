@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="NeonPong"
+config/description="Just a simple Pong clone to learn the basics of building games in GoDot."
+config/version="0.9"
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://assets/neonpong.webp"
 
 [autoload]
 

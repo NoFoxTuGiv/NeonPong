@@ -24,6 +24,8 @@ func _physics_process(delta: float) -> void:
 				Global.aiScore += 1
 			reset_ball()
 		elif collider.name == "PlayerPaddle" or collider.name == "AIPaddle":
+			# Play the blip
+			$Blip.play()
 			# Calculate deflection based on collision point
 			var collision_point = collision_info.get_position()
 			var paddle_center = collider.global_position
@@ -43,8 +45,10 @@ func _physics_process(delta: float) -> void:
 				velocity = new_velocity
 				velocity.x += 10
 			else:
+				$Blip.play()
 				velocity = velocity.bounce(collision_info.get_normal())
 		else:
+			$Blip.play()
 			velocity = velocity.bounce(collision_info.get_normal())
 
 func reset_ball() -> void:
