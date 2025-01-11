@@ -27,4 +27,4 @@ desktop.ini         # Windows system file
 *~                  # Backup files from text editors
 *.bak               # Backup files from editors
 *.old               # Old versions of files
-
+*.exe               # Executables
