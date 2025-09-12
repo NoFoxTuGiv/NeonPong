@@ -20,5 +20,4 @@ License code: XV4LCOLNJXLBH8WI
 - Refactor code base
 - Improve start and options menu
 - Replace placeholder title page
-- Utilize custom built assets
-- Shaders
+- Utilize custom built assets or shaders for gameplay
