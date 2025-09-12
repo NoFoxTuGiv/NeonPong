@@ -14,3 +14,11 @@ Track: Stellar Escape by Prigida
 Music from #Uppbeat (free for Creators!):
 https://uppbeat.io/t/prigida/stellar-escape
 License code: XV4LCOLNJXLBH8WI
+
+### 1.1.0 TODOs
+
+- Refactor code base
+- Improve start and options menu
+- Replace placeholder title page
+- Utilize custom built assets
+- Shaders
